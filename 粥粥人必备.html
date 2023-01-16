@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <video autoplay = "autoplay" loop = "loop" >
+        <source src ="1.mp4" type = 'video/mp4'>
+        
+    </video>  
+    
+    <button class = "btna">成年粥粥人点这里</button>
+    <button class = "btnb">未成年粥粥人点这里</button>
+    <script>
+     
+    
+     let a = document.querySelector('.btna')
+     let b = document.querySelector('.btnb')    
+     let video = document.querySelector('video')
+
+     window.onload = function non(){
+        document.querySelector('video').style.cssText = "display:none;"
+     }
+
+     
+
+     a.addEventListener('click',function(){ 
+        document.querySelector("video").style.cssText = "display:block;"
+            video.play()     
+     })
+
+     b.addEventListener('click',function(){
+        location.href = 'https://www.bilibili.com/video/BV1GJ411x7h7/?spm_id_from=333.337.search-card.all.click&vd_source=e94d3ba24e0c0b13faa0001d325e9457'
+       
+    })
+    </script>
+</body>
+</html>
